@@ -1,0 +1,89 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.5.1 (AdoptOpenJDK Java 11.0.11)
+[debug] Load.defaultLoad until apply took 814.371319ms
+[debug]           Load.loadUnit: plugins took 140.107355ms
+[debug]           Load.loadUnit: defsScala took 0.586851ms
+[debug] [Loading] Scanning directory /home/knoldus/Desktop/Factorial/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/knoldus/Desktop/Factorial/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 38.786739 ms
+[debug]               Load.resolveProject(factorial-build) took 110.948691ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id factorial-build, base: /home/knoldus/Desktop/Factorial/project, plugins: List(<none>))) took 226.765665ms
+[debug] [Loading] Done in /home/knoldus/Desktop/Factorial/project, returning: (factorial-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 265.706744ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.490771ms
+[debug]         Load.loadUnit(file:/home/knoldus/Desktop/Factorial/project/, ...) took 416.810605ms
+[debug]       Load.apply: load took 746.367931ms
+[debug]       Load.apply: resolveProjects took 13.656376ms
+[debug]       Load.apply: finalTransforms took 120.80212ms
+[debug]       Load.apply: config.delegates took 12.818616ms
+[debug]       Load.apply: Def.make(settings)... took 733.054629ms
+[debug]       Load.apply: structureIndex took 216.110587ms
+[debug]       Load.apply: mkStreams took 1.869624ms
+[info] loading project definition from /home/knoldus/Desktop/Factorial/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 3256.932752ms
+[debug]     Load.loadUnit: defsScala took 0.006467ms
+[debug] [Loading] Scanning directory /home/knoldus/Desktop/Factorial
+[debug]       Load.loadUnit: mkEval took 10.054826ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/knoldus/Desktop/Factorial, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.893025 ms
+[info] loading settings for project factorial from build.sbt ...
+[debug]         Load.resolveProject(factorial) took 3.038994ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id factorial, base: /home/knoldus/Desktop/Factorial, plugins: List(<none>))) took 6.604772ms
+[debug] [Loading] Done in /home/knoldus/Desktop/Factorial, returning: (factorial)
+[debug]     Load.loadUnit: loadedProjectsRaw took 2895.359292ms
+[debug]     Load.loadUnit: cleanEvalClasses took 7.64339ms
+[debug]   Load.loadUnit(file:/home/knoldus/Desktop/Factorial/, ...) took 6161.556542ms
+[debug] Load.apply: load took 6189.397085ms
+[debug] Load.apply: resolveProjects took 0.185061ms
+[debug] Load.apply: finalTransforms took 19.953514ms
+[debug] Load.apply: config.delegates took 0.619512ms
+[debug] Load.apply: Def.make(settings)... took 208.832495ms
+[debug] Load.apply: structureIndex took 51.472558ms
+[debug] Load.apply: mkStreams took 0.003589ms
+[info] set current project to Factorial (in build file:/home/knoldus/Desktop/Factorial/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/knoldus/.sbt/1.0/server/682e68417dc1fdf8ed48/sock
+[debug] Writing bsp connection file
+[info] started sbt server
